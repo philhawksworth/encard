@@ -1,8 +1,7 @@
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var cssmin = require('gulp-cssmin');
-
-
+var shell = require('gulp-shell');
 
 gulp.task('scripts', function() {
   // Minify and copy all JavaScript (except vendor scripts)
@@ -18,6 +17,11 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('dist'));
 });
 
+// deploy by pushing the dist subtree to gh-pages
+gulp.task('deploy', ['scripts', 'styles'], shell.task([
+  'git subtree push --prefix dist origin gh-pages'
+]));
 
-// The default task (called when you run `gulp` from cli)
+// The default task builds locally
 gulp.task('default', ['scripts', 'styles']);
+

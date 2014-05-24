@@ -1,7 +1,7 @@
 (function() {
 
-	/* location of scripts */
-	var location = 'https://googledrive.com/host/0B0MUcRHkhiilcVpBeVVYdEtJUEE/';
+	/* location of resources */
+	var location = 'https://philhawksworth.github.io/encard/';
 
 	/* inject stylesheet into page */
 	var css = document.createElement('link');
