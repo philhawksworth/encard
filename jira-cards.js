@@ -1,7 +1,7 @@
 (function($) {
 
   var cardsHTML = $('<div class="encarded-cards"></div>');
-  var controls = $('<div class="encarded-controls"><a href="#" class="includeAll">Include All</a> | <a href="#" class="excludeAll">exclude All</a> | <a href="javascript:!function(){var e="https://googledrive.com/host/0B0MUcRHkhiilcVpBeVVYdEtJUEE/",t="",c=document.createElement("link");c.rel="stylesheet",c.href=e+"jira-cards.css"+t,c.media="screen,print",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c);var d=document.createElement("script");d.src=e+"jira-cards.js"+t,document.body.appendChild(d)}();">bookmark</a></div>');
+  var controls = $('<div class="encarded-controls"><a href="#" class="includeAll">Include All</a> | <a href="#" class="excludeAll">exclude All</a> | <a href="https://philhawksworth.gihub.io/encard">About</a></div>');
 
 
   getGards = function() {
