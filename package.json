@@ -1,0 +1,16 @@
+{
+  "name": "encard",
+  "version": "0.0.1",
+  "description": "Make easily printable kanban cards from Jira",
+  "main": "bookmark.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Phil Hawksworth",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "gulp": "~3.6.2",
+    "gulp-uglify": "~0.3.0",
+    "gulp-cssmin": "~0.1.5"
+  }
+}
